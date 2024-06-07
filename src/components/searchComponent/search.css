@@ -1,0 +1,30 @@
+.container {
+  margin: 2%;
+}
+
+.iconSearch {
+  display: flex;
+  align-items: center;
+  width: 97%;
+  border-bottom: 1px solid #ffffff;
+  padding: 8px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+#search-input {
+  border: none; /* Quita el borde predeterminado */
+  background: transparent; /* Fondo transparente */
+  padding: 8px; /* Espaciado interior */
+  margin: 8px 0; /* Espaciado exterior */
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 20px;
+}

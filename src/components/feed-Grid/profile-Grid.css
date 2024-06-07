@@ -1,0 +1,25 @@
+/* Estilos para el contenedor de fotos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 0% 2%;
+}
+
+/* Estilos para cada foto */
+.photo-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Hace que la altura sea igual al ancho para que sea cuadrada */
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+  margin: 2px;
+}
+
+.photo-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para llenar el cuadro sin distorsionar */
+}

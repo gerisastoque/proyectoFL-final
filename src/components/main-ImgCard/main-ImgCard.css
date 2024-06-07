@@ -1,0 +1,132 @@
+.body-card {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  width: 50%;
+  background-color: #ffffff;
+  height: 20%;
+  border-radius: 20px;
+  padding: 2%;
+  margin: 1%;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 3%;
+}
+
+span {
+  font-size: 15px;
+}
+
+p {
+  font-size: 15px;
+  margin: 2% 0%;
+}
+
+.botton-info {
+  padding: 0% 0% 3% 3%;
+}
+
+.inputComment {
+  text-decoration: none;
+  color: #969696;
+  border: none;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.icon img {
+  width: 6%;
+  margin: 0%;
+}
+
+.right img {
+  width: 6%;
+  margin: 0%;
+}
+
+.buttoncommet{
+  background: white;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  margin-left: 5px;
+}
+
+/* Estilo para el modal */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 1000; 
+  cursor: pointer; 
+}
+
+
+.modal img {
+  max-width: 90%; 
+  max-height: 90%; 
+  object-fit: contain; 
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+
+.modal img:hover {
+  cursor: zoom-out; 
+}
+
+
+/* Responsive styles for medium screens (min-width: 768px) and (max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .body-card {
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  .icon img {
+    width: 6%;
+    margin: 0%;
+  }
+
+  .right img {
+    width: 7%;
+    margin: 0%;
+  }
+  /* Adjust other styles as needed for medium screens */
+}
+
+/* Responsive styles for smaller screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .body-card {
+    width: 90%; /* Full width on smaller screens */
+    height: auto; /* Auto height to adjust based on content */
+    margin: 2%; /* Remove margin for full width */
+    padding: 2%; /* Adjust padding as needed */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+  span,
+  p {
+    font-size: 15px; /* Slightly smaller font size */
+  }
+}

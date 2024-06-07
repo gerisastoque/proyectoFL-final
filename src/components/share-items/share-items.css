@@ -1,0 +1,97 @@
+/* Default styles for screens wider than 1023px */
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.share-post,
+.share-tweet,
+.share-audio {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border-radius: 10px;
+  margin: 1%;
+  margin-left: 33%;
+  padding: 1%;
+}
+
+.share-post {
+  background: #b8fe67;
+}
+
+.share-tweet {
+  background: #fec2dc;
+}
+
+.share-audio {
+  background: #f0fe6d;
+  margin-bottom: 10%;
+}
+
+.userMessage {
+  display: flex;
+  flex: auto;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2%;
+}
+
+.user {
+  font-size: 15px;
+  height: 20px;
+}
+
+.message {
+  font-size: 12px;
+}
+
+img {
+  width: 47px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.plus {
+  background-color: #000;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPlus {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.roundComponents {
+  display: flex;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your medium screen styles here */
+  .share-post,
+  .share-tweet,
+  .share-audio {
+    width: 50%;
+    margin-left: 23%;
+  }
+}
+
+/* Small screen styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  /* Add your small screen styles here */
+  .share-post,
+  .share-tweet,
+  .share-audio {
+    width: 90%;
+    padding: 3%;
+    margin: 1% 3%;
+  }
+}

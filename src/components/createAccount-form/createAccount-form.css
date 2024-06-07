@@ -1,0 +1,82 @@
+/* Default styles for screens wider than 1023px */
+* {
+  font-family: "Inter", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 35%;
+}
+
+label {
+  color: white;
+  font-weight: 200;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  opacity: 0.2;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+button {
+  padding: 20px 5px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  margin-bottom: 3%;
+}
+
+h1 {
+  color: white;
+  margin-left: 40%;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+p {
+  color: white;
+  margin: 1% 35%;
+  margin-bottom: 3%;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  form {
+    margin: 0% 20%;
+  }
+  h1 {
+    margin-left: 30%;
+  }
+}
+
+/* Small screen styles (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Add your small screen styles here */
+  form {
+    margin: 0% 10%;
+  }
+  h1 {
+    margin-left: 10%;
+  }
+  p {
+    margin: 1% 10%;
+  }
+}

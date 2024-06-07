@@ -1,0 +1,5 @@
+.general {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 1fr;
+}

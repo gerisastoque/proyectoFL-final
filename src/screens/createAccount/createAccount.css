@@ -1,0 +1,38 @@
+/* Default styles for screens wider than 1023px */
+* {
+	font-family: 'Inter', sans-serif;
+}
+
+button {
+	padding: 20px 5px;
+	width: 30%;
+	font-size: 15px;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	color: black;
+	background-color: #cbf900;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 3%;
+	text-align: center;
+	line-height: 1;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* Modify medium screen styles here */
+
+	button {
+		width: 50%;
+	}
+}
+
+/* Small screen styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+	/* Modify small screen styles here */
+
+	button {
+		width: 70%;
+	}
+}

@@ -1,0 +1,101 @@
+.create-post-button {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #1a335bab;
+	color: white;
+	font-size: 2.5rem;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	bottom: 20px;
+	right: 43px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	z-index: 1000;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1050;
+}
+
+.modal {
+	position: fixed;
+	right: 4rem;
+	/* top: 20px; */
+	bottom: 90px;
+	background-color: #2f60e9;
+	color: white;
+	padding: 1rem;
+	border-radius: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	z-index: 1100;
+	width: 200px;
+	height: 150px;
+}
+
+.modal-content p {
+	position: relative;
+	font-size: 1.3rem;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+
+.modal-content p::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 120px;
+	height: 2px;
+	background-color: white;
+}
+
+.modal-content p.new-post {
+	margin-bottom: 2rem; /* Separación hacia abajo para el párrafo "New Post" */
+}
+
+.modal-content p.new-tweet {
+	margin-top: 1rem; /* Separación hacia arriba para el párrafo "New Tweet" */
+}
+
+.close-modal {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 1.7rem;
+	cursor: pointer;
+	margin-top: 10px;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+	.create-post-button {
+		width: 70px;
+		height: 70px;
+		font-size: 2rem;
+		bottom: 100px;
+		right: 20px;
+	}
+
+	.modal {
+		width: 40%;
+		height: auto;
+		bottom: 170px;
+		padding: 0.5rem;
+		right: 3rem;
+	}
+
+	.modal-content p {
+		font-size: 1rem;
+	}
+}

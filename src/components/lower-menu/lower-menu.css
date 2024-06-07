@@ -1,0 +1,67 @@
+/* Default styles for screens wider than 1023px */
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.linea-blanca {
+  border: none;
+  border-top: 0.5px solid #fff;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 10%;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your medium screen styles here */
+  .linea-blanca {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  section {
+    margin: 0% 5%;
+  }
+}
+
+/* Small screen styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  /* Add your small screen styles here */
+  .linea-blanca {
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0% 5%;
+  }
+
+  p {
+    margin: 0%;
+  }
+}

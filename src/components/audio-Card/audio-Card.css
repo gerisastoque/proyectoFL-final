@@ -1,0 +1,93 @@
+/* Default styles for screens wider than 1023px */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  border-radius: 20px;
+  background: #f0fe6d;
+  margin: 1%;
+  padding: 3% 2%;
+}
+
+.imgUser {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estilo para el modal (fondo negro transparente) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Para que el modal esté en la parte superior */
+}
+
+/* Estilo para la imagen más grande en el modal */
+.modal img {
+  max-width: 30%; 
+  max-height: 30%; 
+  border-radius: 50%; 
+}
+
+.audioContainer {
+  width: 30%;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.audioImg {
+  width: 100%;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .imgUser {
+    width: 47px;
+    height: 47px;
+  }
+
+  .audioContainer {
+    width: 60%;
+  }
+
+  .audioImg {
+    width: 50%;
+  }
+}
+
+/* Small screen styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .imgUser {
+    width: 47px;
+    height: 47px;
+  }
+
+  .audioContainer {
+    width: 80%;
+  }
+
+  .audioImg {
+    width: 50%;
+  }
+}

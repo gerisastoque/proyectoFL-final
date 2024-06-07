@@ -1,0 +1,25 @@
+* {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -10px;
+	width: auto;
+	padding-inline: 1rem;
+}
+
+.logo img,
+.icons img {
+	height: 40px; /* Ajusta el tamaño de los iconos y logo */
+}
+
+.icons {
+	display: flex;
+	justify-content: space-between; /* Espacia los iconos equitativamente */
+	width: 120px;
+	padding: 0.2rem; /* Ajusta este valor basado en el tamaño de tus iconos y el espacio que quieres entre ellos */
+}
+.swicth {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,55 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1500px; /* Ajusta la altura según tus necesidades */
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+button {
+  background-color: black;
+  color: #ffffff;
+  font-size: medium;
+  border-radius: 10px;
+  width: 40%;
+  padding: 3%;
+}
+
+h1 {
+  margin: 0%;
+}
+
+p {
+  margin: 1%;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your medium screen styles here */
+  section {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  /* Small screen styles (max-width: 767px) */
+  @media screen and (max-width: 767px) {
+    /* Add your small screen styles here */
+    section {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+/* Default styles for screens wider than 1023px */
+* {
+	font-family: 'Inter', sans-serif;
+}
+
+.user {
+	width: 7%;
+	border-radius: 50%;
+	border: 3px solid #b8fe67;
+	margin-bottom: 10px;
+}
+
+.user-profile {
+	font-size: 25px;
+	color: white;
+	margin: 0%;
+}
+
+.user-at {
+	color: #a1a1a1;
+	margin: 0%;
+}
+
+.container-secondline {
+	display: flex;
+	align-items: center;
+	margin: 0%;
+	padding: 0%;
+}
+
+.user-link {
+	font-weight: 700;
+	color: #b8fe67;
+}
+
+.user-description {
+	color: white;
+	margin-left: 5px;
+}
+
+.button-profile {
+	padding: 20px 5px;
+	width: 10%;
+	font-size: 15px;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	color: black;
+	background-color: white;
+}
+
+.containerButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px; /* Puedes ajustar el margen según sea necesario */
+	margin-bottom: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-logout {
+	padding: 20px 5px;
+	width: 10%;
+	font-size: 15px;
+	text-decoration: none;
+	border: 2px solid rgb(255, 92, 92);
+	border-radius: 10px;
+	color: rgb(255, 92, 92);
+	background-color: transparent;
+	margin: 0 10px;
+}
+.post {
+	color: white;
+	background-color: none;
+}
+
+/* Medium screen styles (min-width: 768px, max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* Add your medium screen styles here */
+	.user-profile {
+		font-size: 20px;
+	}
+
+	.user {
+		width: 15%;
+		border-radius: 50%;
+		border: 3px solid #b8fe67;
+		margin-bottom: 10px;
+	}
+
+	.button-profile {
+		width: 25%;
+	}
+
+	.container-secondline {
+		display: flex;
+		align-items: center;
+		padding: 0%;
+	}
+}
+
+/* Small screen styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+	/* Add your small screen styles here */
+	.user {
+		width: 20%;
+		border-radius: 50%;
+		border: 3px solid #b8fe67;
+		margin-bottom: 10px;
+	}
+
+	.user-profile {
+		font-size: 18px;
+	}
+
+	.button-profile {
+		width: 40%;
+	}
+
+	.container-secondline {
+		display: flex;
+		align-items: center;
+		padding: 0%;
+	}
+}
+
+.switch {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	width: 80%;
+}
+
+.post {
+	width: 50%;
+	background-color: #181818;
+	border-bottom: 1px #b8fe67;
+	border: #181818;
+}

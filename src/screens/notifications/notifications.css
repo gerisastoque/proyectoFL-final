@@ -1,0 +1,32 @@
+.title1 {
+	font-family: 'Inter', sans-serif;
+	color: #ffffff;
+	margin-left: 4%;
+	margin-top: 10%;
+}
+.title1::before {
+	content: '';
+	position: absolute;
+	bottom: 30rem; /* Ajusta esta posición según sea necesario */
+	left: 4%;
+	width: 85%;
+	height: 38px; /* Grosor de la línea */
+	background-color: #cbf900ab; /* Color verde */
+	z-index: -1; /* Coloca la línea detrás del texto */
+}
+.title2 {
+	font-family: 'Inter', sans-serif;
+	color: #ffffff;
+	margin-left: 4%;
+	margin-top: 2%;
+}
+.title2::before {
+	content: '';
+	position: absolute;
+	bottom: -13.5rem; /* Ajusta esta posición según sea necesario */
+	left: 4%;
+	width: 85%;
+	height: 38px; /* Grosor de la línea */
+	background-color: #cbf900ab; /* Color verde */
+	z-index: -1; /* Coloca la línea detrás del texto */
+}
